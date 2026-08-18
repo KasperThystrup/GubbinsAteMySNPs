@@ -20,3 +20,21 @@ Options:
   -t    Amount of threads to use on intensive tasks (default: 4)
   -h    Show this help
 ```
+## Installation
+Install the required environment
+```
+micromamba create -n snps bioconda::snippy bioconda::gubbins --yes
+```
+Navigate to you folder with repositories (e.g. `~/repos/`), clone the repository, and navigate into the cloned folder
+```
+cd ~/repos
+git clone https://github.com/KasperThystrup/GubbinsAteMySNPs.git
+cd GubbinsAteMySNPs
+```
+
+Attempt to evoke the help page, to ensure everything works
+```
+bash gubbinsAteMySNPs.sh -h
+```
+
+
