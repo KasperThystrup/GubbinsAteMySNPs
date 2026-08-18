@@ -1,3 +1,12 @@
+# GubbinsAteMySNPs
+## Requirements
+* Micromamba installed
+* A conda/mamba environment with Snippy and Gubbins installed
+
+## Usage
+GubbinsAteMySNPs screens the input directory (`-i`) recursively for paired end read files with the provided mate and file extension (`-r Default: _R1.fastq.gz) as well as screens for assembly files with the provided file extension (`-f` Default: .fasta). The output directory are populated with all intermediate files by the tools and final results files. Micromamba runs the commands directly by prompting the required mamba environment without activating it first. Thus, its important to provide íts correct name (`-e` Default: snps). 
+
+```
 Usage:
   ./gubbinsAteMySNPs.sh -i DIR -o DIR -R FASTA [-r _R1.EXT -f .fasta -t INT]
 
@@ -10,3 +19,4 @@ Options:
   -e    Snippy environment name (default: snps)
   -t    Amount of threads to use on intensive tasks (default: 4)
   -h    Show this help
+```
